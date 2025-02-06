@@ -1,0 +1,48 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>root.project</groupId>
+   <artifactId>ejbs</artifactId>
+   <packaging>ejb</packaging>
+   <version>1.0</version>
+   <name>enterprise java beans</name>
+   <parent>
+      <groupId>root</groupId>
+      <artifactId>project</artifactId>
+      <version>1.0</version>
+   </parent>
+   <dependencies>
+      <dependency>
+         <groupId>jakarta.platform</groupId>
+         <artifactId>jakarta.jakartaee-api</artifactId>
+         <version>9.1.0</version>
+         <scope>provided</scope>
+      </dependency>
+      <!-- Hibernate Core -->
+      <dependency>
+         <groupId>org.hibernate.orm</groupId>
+         <artifactId>hibernate-core</artifactId>
+         <version>6.5.3.Final</version> <!-- Mettre à jour si nécessaire -->
+      </dependency>
+      <!-- Jakarta Persistence API -->
+      <dependency>
+         <groupId>jakarta.persistence</groupId>
+         <artifactId>jakarta.persistence-api</artifactId>
+         <version>3.1.0</version>
+      </dependency>
+      <!-- MySQL Connector -->
+      <dependency>
+         <groupId>com.mysql</groupId>
+         <artifactId>mysql-connector-j</artifactId>
+         <version>8.3.0</version>
+      </dependency>
+  </dependencies>
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-ejb-plugin</artifactId>
+            <version>3.2.1</version>
+         </plugin>
+      </plugins>
+   </build>
+</project>
